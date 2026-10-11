@@ -1,6 +1,8 @@
 import { io, Socket } from "socket.io-client";
 
-const SOCKET_URL = "https://axle-api-q8oa.onrender.com";
+const SOCKET_URL = (
+  process.env.NEXT_PUBLIC_API_URL ?? "https://axle-api-q8oa.onrender.com"
+).replace(/\/$/, "");
 
 class SocketClient {
   private socket: Socket | null = null;

@@ -1,0 +1,5 @@
+allowBuilds:
+  '@heroui/shared-utils': false
+  sharp: false
+  unrs-resolver: false
+strictDepBuilds: false

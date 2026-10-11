@@ -10,6 +10,7 @@ import {
   HandshakeIcon,
   HouseIcon,
   SquaresFourIcon,
+  XLogoIcon,
 } from "@phosphor-icons/react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -90,6 +91,11 @@ const Sidebar = () => {
       name: "Apps",
       href: "/app/apps",
       icons: SquaresFourIcon,
+    },
+    {
+      name: "X Accounts",
+      href: "/app/x-accounts",
+      icons: XLogoIcon,
     },
     {
       name: "Settings",
